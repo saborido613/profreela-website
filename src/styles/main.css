@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-a{
-    cursor: pointer;
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
 }

@@ -1,10 +1,22 @@
+import useSectionRefs from "../../../hooks/useSectionRefs";
 import FotoSection1 from "/images/Scrum board-bro.png";
 
-function Section1() {
+export interface SectionProps {
+  id: string;
+  title: string;
+}
+
+function SectionSobre(props: SectionProps) {
+  const { sectionRefs } = useSectionRefs();
+
   return (
-    <div className="flex flex-col">
+    <section
+      className="flex flex-col"
+      id={props.id}
+      ref={sectionRefs.current[props.id]}
+    >
       <div className="flex justify-center w-full pt-8">
-        <h1 className="text-5xl font-extrabold">O que é o ProFreela</h1>
+        <h1 className="text-5xl font-extrabold">{props.title}</h1>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center container-[75vw] w-full md:container mx-auto pt-10">
         <img src={FotoSection1} alt="" className="md:h-[70vh]" />
@@ -28,8 +40,8 @@ function Section1() {
           officiis temporibus voluptas repellendus dolores.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default Section1;
+export default SectionSobre;
