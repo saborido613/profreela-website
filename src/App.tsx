@@ -1,18 +1,16 @@
-import './styles/main.css'
-import Nav from './Components/Nav/nav'
-import Home from './Components/Home/home';
-import Section1 from './Components/Sections/Section1/section1';
+import Home from "./Components/Home/home";
+import Nav from "./Components/Nav/nav";
+import SectionSobre from "./Components/Sections/SectionSobre/SectionSobre";
+import "./styles/main.css";
 
 function App() {
-
   return (
     <div>
       <Nav />
       <Home />
-      <Section1/>
+      <SectionSobre id="sobre" title="O que é o ProFreela?" />
     </div>
-
-  )
+  );
 }
 
 export default App;
