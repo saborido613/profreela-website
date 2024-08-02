@@ -9,3 +9,7 @@ html {
 a {
   cursor: pointer;
 }
+
+.bg-footer{
+  background-color: #211C45;
+}

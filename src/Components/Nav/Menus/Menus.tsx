@@ -2,6 +2,10 @@ import { useState } from "react";
 
 import { Path } from "./paths";
 
+export interface MenuProps {
+  fonte: string;
+}
+
 export default function Menus({ isOpen }: { isOpen?: boolean }) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 

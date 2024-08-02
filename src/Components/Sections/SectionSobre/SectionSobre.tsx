@@ -1,5 +1,5 @@
 import SectionComponent from "../../shared/component/Section/SectionComponent";
-import FotoSection1 from "/images/Scrum board-bro.png";
+import FotoSobre from "/images/Scrum board-bro.png";
 
 export interface SectionProps {
   id: string;
@@ -12,9 +12,18 @@ function SectionSobre(props: SectionProps) {
       id={props.id}
       title={props.title}
       children={
-        <div className="flex flex-col md:flex-row justify-center items-center container-[75vw] w-full md:container mx-auto pt-10">
-          <img src={FotoSection1} alt="" className="md:h-[70vh]" />
-          <p>
+        <div className="flex
+        flex-col
+        md:flex-row
+        justify-center
+        items-center
+        max-w-[75vw]
+        w-full
+        md:container
+        mx-auto
+        pt-10">
+          <img src={FotoSobre} alt="" className="md:h-[60vh] lg:h-[70vh]" />
+          <p className="my-4 text-justify">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
             vitae numquam commodi tempora, expedita eaque recusandae. Ipsum,
             reprehenderit pariatur quae provident aliquid excepturi libero illum
