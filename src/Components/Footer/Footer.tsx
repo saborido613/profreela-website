@@ -41,7 +41,9 @@ export default function Footer() {
       </div>
 
       <div className="flex items-center justify-center h-[5vh]">
-        <p>© ProFreela Enterprise 2024 - anoAtual</p>
+        <p>
+          © ProFreela Enterprise - since 2024 - until {new Date().getFullYear()}
+        </p>
       </div>
 
       <CookiesConsent />
