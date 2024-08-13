@@ -1,3 +1,4 @@
+import Path from "../../Routes/paths";
 import CookiesConsent from "../CookiesConsent/CookiesConsent";
 import Menus from "../Nav/Menus/Menus";
 
@@ -31,10 +32,10 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center md:items-start pt-12 gap-4">
-          <a href="" className="text-white text-sm font-medium">
+          <a href={Path.POLITICA_PRIVACIDADE} className="text-white text-sm font-medium">
             Políticas de Privacidade
           </a>
-          <a href="" className="text-white text-sm font-medium">
+          <a href={Path.TERMOS_E_CONDICOES} className="text-white text-sm font-medium">
             Termos de Uso e Condições
           </a>
         </div>

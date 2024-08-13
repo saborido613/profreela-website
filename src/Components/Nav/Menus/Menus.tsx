@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-import { Path } from "./paths";
+import { MenuSection } from "./menuSection";
 
 export interface MenuProps {
   fonte: string;
@@ -15,7 +14,7 @@ export default function Menus({ isOpen }: { isOpen?: boolean }) {
 
   return (
     <>
-      {Path.map((item) => {
+      {MenuSection.map((item) => {
         const isActive = activeSection == item.section;
 
         return (
