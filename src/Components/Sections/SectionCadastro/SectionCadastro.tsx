@@ -16,6 +16,16 @@ export default function SectionCadastro(props: SectionCadastroProps) {
     Phone: ''
   });
 
+  const resetFormData = ()=>{
+    setFormData({
+    Name: '',
+    Username: '',
+    Password: '',
+    Email: '',
+    Phone: ''
+    })
+  }
+
   const [message, setMessage] = useState<string | null>(null);
   const [mostraMensagem, setMostraMensagem ] = useState<string | null>(null)
   const [loading, setLoading ] = useState<boolean>(false)
@@ -44,7 +54,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
     try {
       setLoading(true)
       const response = await axios.post(endpoint, formData);
-      console.log(response)
+      resetFormData()
       setMostraMensagem(response?.data);
       setLoading(false)
     } catch (error) {

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MenuSection } from "./menuSection";
+import { MenuSource } from "./menuSection";
+import { useLocation } from "react-router-dom";
 
 export interface MenuProps {
   fonte: string;
@@ -7,20 +8,26 @@ export interface MenuProps {
 
 export default function Menus({ isOpen }: { isOpen?: boolean }) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
-
+  
   const handleMenuClick = (section: string) => {
     setActiveSection(section);
   };
+  
+  const {pathname} = useLocation();
 
   return (
     <>
-      {MenuSection.map((item) => {
-        const isActive = activeSection == item.section;
+      {MenuSource.map((item) => {
+        const isActive = activeSection == item.source;
+        const goTo = 
+          (pathname.endsWith("privacidade") || pathname.endsWith("condicoes")) && item.source!="#contato"
+          ? '/'
+          : item.source;
 
         return (
           <a
-            key={item.section}
-            href={`#${item.section}`}
+            key={item.source}
+            href={goTo}
             className={`
               ${isOpen && "block"}
               rounded-md
@@ -30,7 +37,7 @@ export default function Menus({ isOpen }: { isOpen?: boolean }) {
               font-medium   hover:text-gray-300
 
             `}
-            onClick={() => handleMenuClick(item.section)}
+            onClick={() => handleMenuClick(item.source)}
           >
             {item.nome}
           </a>

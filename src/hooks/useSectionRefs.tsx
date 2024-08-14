@@ -1,5 +1,5 @@
 import React, { RefObject, useRef } from "react";
-import { MenuItem, MenuSection } from "../Components/Nav/Menus/menuSection";
+import { MenuItem, MenuSource } from "../Components/Nav/Menus/menuSection";
 
 export interface SectionRefs {
   [key: string]: RefObject<HTMLElement>;
@@ -7,8 +7,8 @@ export interface SectionRefs {
 
 function useSectionRefs() {
   const sectionRefs = useRef<SectionRefs>(
-    MenuSection.reduce((acc: SectionRefs, value: MenuItem) => {
-      acc[value.section] = React.createRef();
+    MenuSource.reduce((acc: SectionRefs, value: MenuItem) => {
+      acc[value.source] = React.createRef();
       return acc;
     }, {})
   );

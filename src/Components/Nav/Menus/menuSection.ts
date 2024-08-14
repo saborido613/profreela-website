@@ -1,27 +1,31 @@
 export interface MenuItem {
     nome: string;
-    section: string;
+    source: string;
   }
   
-  export const MenuSection = [
+  export const MenuSource = [
     {
       nome: "Sobre",
-      section: "sobre",
+      source: "#sobre",
     },
     {
       nome: "Funcionalidades",
-      section: "funcionalidades",
+      source: "#funcionalidades",
     },
     {
       nome: "Dispositivos",
-      section: "dispositivos",
+      source: "#dispositivos",
     },
     {
       nome: "Pré-cadastro",
-      section: "pre-cadastro",
+      source: "#pre-cadastro",
     },
     {
       nome: "Contato",
-      section: "contato",
+      source: "#contato",
+    },
+    {
+      nome: "Entrar",
+      source: "https://profreela-web.onrender.com/",
     },
   ]

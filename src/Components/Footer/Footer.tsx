@@ -6,9 +6,9 @@ export interface FooterProps {
   id: string;
 }
 
-export default function Footer() {
+export default function Footer({id} : FooterProps) {
   return (
-    <div>
+    <div id={id}>
       <div
         className="bg-footer
         h-[60vh]

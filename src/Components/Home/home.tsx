@@ -14,7 +14,7 @@ function Home() {
       <SectionFuncionalidades id="funcionalidades" title="Funcionalidades"/>
       <SectionDispositivos id="dispositivos" title="Dispositivos"/>
       <SectionCadastro id="pre-cadastro"/>
-      <Footer/>
+      <Footer id="contato"/>
     </div>
   );
 }
