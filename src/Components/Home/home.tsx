@@ -11,10 +11,10 @@ function Home() {
       <Nav />
       <Header />
       <SectionSobre id="sobre" title="O que é o ProFreela?" />
-      <SectionFuncionalidades id="funcionalidades" title="Funcionalidades"/>
-      <SectionDispositivos id="dispositivos" title="Dispositivos"/>
-      <SectionCadastro id="pre-cadastro"/>
-      <Footer id="contato"/>
+      <SectionFuncionalidades id="funcionalidades" title="Funcionalidades" />
+      <SectionDispositivos id="dispositivos" title="Dispositivos" />
+      <SectionCadastro id="pre-cadastro" />
+      <Footer id="contato" />
     </div>
   );
 }
@@ -35,4 +35,4 @@ function Header() {
   );
 }
 
-export {Header};
+export { Header };

@@ -1,6 +1,5 @@
-import React from "react";
-import Nav from "../Nav/nav";
 import Footer from "../Footer/Footer";
+import Nav from "../Nav/nav";
 
 export default function TermosCondicoes() {
   return (
@@ -18,10 +17,10 @@ export default function TermosCondicoes() {
         <p>
           Ao acessar ao site <a href="https://www.profreela.com">Profreela</a>,
           concorda em cumprir estes termos de serviço, todas as leis e
-          regulamentos aplicáveis ​​e concorda que é responsável pelo
-          cumprimento de todas as leis locais aplicáveis. Se você não concordar
-          com algum desses termos, está proibido de usar ou acessar este site.
-          Os materiais contidos neste site são protegidos pelas leis de direitos
+          regulamentos aplicáveis e concorda que é responsável pelo cumprimento
+          de todas as leis locais aplicáveis. Se você não concordar com algum
+          desses termos, está proibido de usar ou acessar este site. Os
+          materiais contidos neste site são protegidos pelas leis de direitos
           autorais e marcas comerciais aplicáveis.
         </p>
         <h2 className="text-2xl font-bold py-4">2. Uso de Licença</h2>
@@ -58,7 +57,9 @@ export default function TermosCondicoes() {
           desta licença, você deve apagar todos os materiais baixados em sua
           posse, seja em formato eletrónico ou impresso.
         </p>
-        <h2 className="text-2xl font-bold py-4">3. Isenção de responsabilidade</h2>
+        <h2 className="text-2xl font-bold py-4">
+          3. Isenção de responsabilidade
+        </h2>
         <ol className="list-decimal pl-10">
           <li>
             Os materiais no site da Profreela são fornecidos 'como estão'.
@@ -70,22 +71,22 @@ export default function TermosCondicoes() {
           </li>
           <li>
             Além disso, o Profreela não garante ou faz qualquer representação
-            relativa à precisão, aos resultados prováveis ​​ou à confiabilidade
-            do uso dos materiais em seu site ou de outra forma relacionado a
-            esses materiais ou em sites vinculados a este site.
+            relativa à precisão, aos resultados prováveis ou à confiabilidade do
+            uso dos materiais em seu site ou de outra forma relacionado a esses
+            materiais ou em sites vinculados a este site.
           </li>
         </ol>
         <h2 className="text-2xl font-bold py-4">4. Limitações</h2>
         <p>
-          Em nenhum caso o Profreela ou seus fornecedores serão responsáveis
-          ​​por quaisquer danos (incluindo, sem limitação, danos por perda de
-          dados ou lucro ou devido a interrupção dos negócios) decorrentes do
-          uso ou da incapacidade de usar os materiais em Profreela, mesmo que
-          Profreela ou um representante autorizado da Profreela tenha sido
-          notificado oralmente ou por escrito da possibilidade de tais danos.
-          Como algumas jurisdições não permitem limitações em garantias
-          implícitas, ou limitações de responsabilidade por danos conseqüentes
-          ou incidentais, essas limitações podem não se aplicar a você.
+          Em nenhum caso o Profreela ou seus fornecedores serão responsáveis por
+          quaisquer danos (incluindo, sem limitação, danos por perda de dados ou
+          lucro ou devido a interrupção dos negócios) decorrentes do uso ou da
+          incapacidade de usar os materiais em Profreela, mesmo que Profreela ou
+          um representante autorizado da Profreela tenha sido notificado
+          oralmente ou por escrito da possibilidade de tais danos. Como algumas
+          jurisdições não permitem limitações em garantias implícitas, ou
+          limitações de responsabilidade por danos conseqüentes ou incidentais,
+          essas limitações podem não se aplicar a você.
         </p>
         <h2 className="text-2xl font-bold py-4">5. Precisão dos materiais</h2>
         <p>
@@ -120,7 +121,7 @@ export default function TermosCondicoes() {
         </p>
       </div>
 
-      <Footer id="contato"/>
+      <Footer id="contato" />
     </div>
   );
 }
