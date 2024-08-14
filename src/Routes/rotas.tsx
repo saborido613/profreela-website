@@ -5,19 +5,18 @@ import PoliticaPrivacidade from "../Components/PoliticaPrivacidade/PoliticaPriva
 import TermosCondicoes from "../Components/TermosCondicoes/TermosCondicoes";
 
 const router = createBrowserRouter([
-    {
-      path: Path.POLITICA_PRIVACIDADE,
-      element: <PoliticaPrivacidade />
-    },
-    {
-      path: Path.TERMOS_E_CONDICOES,
-      element: <TermosCondicoes />,
-    },
-    {
-      path: Path.HOME,
-      element: <Home />
-    }
-      
-  ])
-  
-  export default router;
+  {
+    path: Path.POLITICA_PRIVACIDADE,
+    element: <PoliticaPrivacidade />
+  },
+  {
+    path: Path.TERMOS_E_CONDICOES,
+    element: <TermosCondicoes />
+  },
+  {
+    path: Path.HOME,
+    element: <Home />
+  }
+]);
+
+export default router;
