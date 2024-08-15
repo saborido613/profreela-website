@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Path from "../../Routes/paths";
 import CookiesConsent from "../CookiesConsent/CookiesConsent";
 import Menus from "../Nav/Menus/Menus";
@@ -27,18 +28,18 @@ export default function Footer({ id }: FooterProps) {
           </div>
 
           <div className="flex flex-col items-center md:items-start gap-4">
-            <a
-              href={Path.POLITICA_PRIVACIDADE}
+            <Link
+              to={Path.POLITICA_PRIVACIDADE}
               className="text-white text-sm font-medium"
             >
               Políticas de Privacidade
-            </a>
-            <a
-              href={Path.TERMOS_E_CONDICOES}
+            </Link>
+            <Link
+              to={Path.TERMOS_E_CONDICOES}
               className="text-white text-sm font-medium"
             >
               Termos de Uso e Condições
-            </a>
+            </Link>
           </div>
         </div>
       </div>

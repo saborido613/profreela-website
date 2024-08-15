@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { MenuSource } from "./menuSection";
 import { useLocation } from "react-router-dom";
+import { MenuSource } from "./menuSection";
 
 export interface MenuProps {
   fonte: string;
