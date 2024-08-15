@@ -66,11 +66,14 @@ export default function SectionCadastro(props: SectionCadastroProps) {
   return (
     <section
       id={props.id}
-      className="flex flex-col md:flex-row justify-center items-center max-w-[75vw] w-full md:container mx-auto pt-10 pb-5 gap-24"
+      className="flex flex-col md:flex-row justify-around items-center max-w-[75vw] w-full md:container mx-auto pt-10 pb-5 gap-24"
     >
-      <img src={ImagemCadastro} alt="" className="md:h-[60vh] lg:h-[70vh]" />
+      <img
+        src={ImagemCadastro}
+        alt="Ilustração de um homem se inscrevendo em um tablet maior do que ele"
+        className="md:h-[60vh] lg:h-[70vh]"
+      />
       <div className="flex flex-col gap-14">
-        <>{console.log(message)}</>
         <h1 className="text-3xl font-extrabold md:text-4xl lg:text-5xl">
           Pré-Cadastro
         </h1>
@@ -79,7 +82,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
             type="text"
             name="Name"
             placeholder="Nome Completo"
-            className="border border-purple-950 p-2 rounded-lg focus:outline-none md:w-[20vw]"
+            className="border border-purple-950 p-2 rounded-lg focus:outline-none"
             value={formData.Name}
             onChange={handleChange}
           />
@@ -87,7 +90,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
             type="text"
             name="Username"
             placeholder="Username"
-            className="border border-purple-950 p-2 rounded-lg focus:outline-none md:w-[20vw]"
+            className="border border-purple-950 p-2 rounded-lg focus:outline-none"
             value={formData.Username}
             onChange={handleChange}
           />
@@ -95,7 +98,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
             type="password"
             name="Password"
             placeholder="Senha"
-            className="border border-purple-950 p-2 rounded-lg focus:outline-none md:w-[20vw]"
+            className="border border-purple-950 p-2 rounded-lg focus:outline-none"
             value={formData.Password}
             onChange={handleChange}
           />
@@ -103,7 +106,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
             type="text"
             name="Email"
             placeholder="Seu melhor email"
-            className="border border-purple-950 p-2 rounded-lg focus:outline-none md:w-[20vw]"
+            className="border border-purple-950 p-2 rounded-lg focus:outline-none"
             value={formData.Email}
             onChange={handleChange}
           />
@@ -111,7 +114,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
             type="text"
             name="Phone"
             placeholder="Telefone"
-            className="border border-purple-950 p-2 rounded-lg focus:outline-none md:w-[20vw]"
+            className="border border-purple-950 p-2 rounded-lg focus:outline-none"
             value={formData.Phone}
             onChange={handleChange}
           />

@@ -8,21 +8,23 @@ export interface MenuProps {
 
 export default function Menus({ isOpen }: { isOpen?: boolean }) {
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  
+
   const handleMenuClick = (section: string) => {
     setActiveSection(section);
   };
-  
-  const {pathname} = useLocation();
+
+  const { pathname } = useLocation();
 
   return (
     <>
       {MenuSource.map((item) => {
         const isActive = activeSection == item.source;
-        const goTo = 
-          (pathname.endsWith("privacidade") || pathname.endsWith("condicoes")) && item.source!="#contato"
-          ? '/'
-          : item.source;
+        const goTo =
+          (pathname.endsWith("privacidade") ||
+            pathname.endsWith("condicoes")) &&
+          item.source != "#contato"
+            ? "/"
+            : item.source;
 
         return (
           <a
