@@ -4,7 +4,7 @@ function ErrorPage() {
       <h1 className="font-black text-2xl">Erro 404</h1>
       <p>
         A página solicitada não foi encontrada. Por favor, contate o suporte
-        através do email: contatoprofreela@gmail.com
+        através do email: contatowayfreela@gmail.com
       </p>
     </div>
   );

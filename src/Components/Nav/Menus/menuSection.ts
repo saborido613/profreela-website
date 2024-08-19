@@ -26,6 +26,6 @@ export interface MenuItem {
     },
     {
       nome: "Entrar",
-      source: "https://profreela-web.onrender.com/",
+      source: "https://wayfreela-web.onrender.com/",
     },
   ]

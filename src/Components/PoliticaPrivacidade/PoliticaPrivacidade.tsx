@@ -6,19 +6,19 @@ export default function PoliticaPrivacidade() {
     <div>
       <Nav />
 
-      <div className="bg-termos-politicas h-[23vh] pt-24">
+      <div className="bg-termos-politicas h-[17vh] lg:h-[23vh] pt-20">
         <h1 className="text-2xl md:text-4xl xl:text-7xl text-white font-bold justify-center flex">
-          ProFreela - Política e privacidade
+          WayFreela - Política e privacidade
         </h1>
       </div>
 
       <div className="py-20 max-w-[75vw] md:container mx-auto text-justify flex flex-col gap-1">
         <p>
-          A sua privacidade é importante para nós. É política do Profreela
+          A sua privacidade é importante para nós. É política do Wayfreela
           respeitar a sua privacidade em relação a qualquer informação sua que
           possamos coletar no site{" "}
-          <a className="text-purple-800" href="https://www.profreela.com">
-            Profreela
+          <a className="text-purple-800" href="https://www.wayfreela.com">
+            Wayfreela
           </a>
           , e outros sites que possuímos e operamos.
         </p>
@@ -98,7 +98,7 @@ export default function PoliticaPrivacidade() {
         <h1 className="text-2xl font-bold py-5">Compromisso do Usuário</h1>
         <p>
           O usuário se compromete a fazer uso adequado dos conteúdos e da
-          informação que o Profreela oferece no site e com caráter enunciativo,
+          informação que o Wayfreela oferece no site e com caráter enunciativo,
           mas não limitativo:
         </p>
         <ul className="pl-10">
@@ -127,7 +127,7 @@ export default function PoliticaPrivacidade() {
           <li>
             <span>
               C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-              (softwares) do Profreela, de seus fornecedores ou terceiros, para
+              (softwares) do Wayfreela, de seus fornecedores ou terceiros, para
               introduzir ou disseminar vírus informáticos ou quaisquer outros
               sistemas de hardware ou software que sejam capazes de causar danos
               anteriormente mencionados.

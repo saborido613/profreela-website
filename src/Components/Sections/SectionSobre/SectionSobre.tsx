@@ -38,7 +38,7 @@ function SectionSobre(props: SectionProps) {
               vai dar tempo?”.
             </p>
             <p className="my-4 text-justify">
-              É por isso que estamos aqui, para ajudar. Com o ProFreela, você
+              É por isso que estamos aqui, para ajudar. Com o WayFreela, você
               pode organizar suas tarefas e estabelecer prazos mais realistas
               para seus clientes. Além disso, nossa plataforma permite o envio
               direto de itens para revisão, facilitando a comunicação e o
@@ -47,7 +47,7 @@ function SectionSobre(props: SectionProps) {
             <p className="my-4 text-justify">
               Mas não paramos por aí. Sabemos que a organização financeira é tão
               importante quanto a organização dos projetos. Por isso, o
-              ProFreela oferece um módulo financeiro que proporciona
+              WayFreela oferece um módulo financeiro que proporciona
               previsibilidade nas suas entradas e saídas, ajudando você a manter
               suas finanças em ordem.
             </p>

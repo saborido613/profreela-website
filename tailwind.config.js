@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        profreela_backgroundImage: "linear-gradient(rgba(40, 15, 73,.9), rgba(40, 15, 73,.9)), url('/images/ProFreela-transparent.png')"
+        wayfreela_backgroundImage: "linear-gradient(rgba(40, 15, 73,.9), rgba(40, 15, 73,.9)), url('/images/WayFreela-transparent.png')"
       }
     },
   },

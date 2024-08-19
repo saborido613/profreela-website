@@ -16,10 +16,10 @@ export default function Footer({ id }: FooterProps) {
         py-10
         "
       >
-        <div className="container mx-auto flex flex-col md:flex-row justify-between text-nowrap">
-          <div className="flex items-center">
-            <h1 className="text-2xl lg:text-6xl xl:text-9xl text-white font-bold">
-              ProFreela
+        <div className="container mx-auto flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between text-nowrap text-center md:text-start">
+          <div className="flex items-center justify-center">
+            <h1 className="text-2xl lg:text-4xl xl:text-7xl text-white font-bold">
+              WayFreela
             </h1>
           </div>
 
@@ -46,7 +46,7 @@ export default function Footer({ id }: FooterProps) {
 
       <div className="flex items-center justify-center h-[5vh]">
         <p>
-          © ProFreela Enterprise - since 2024 - until {new Date().getFullYear()}
+          © WayFreela Enterprise - since 2024 - until {new Date().getFullYear()}
         </p>
       </div>
 

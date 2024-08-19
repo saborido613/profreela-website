@@ -50,7 +50,7 @@ function SectionFuncionalidades(props: SectionProps) {
                   </li>
                 </ul>
                 <p>
-                  Com a dashboard do ProFreela, você gerencia seu negócio de
+                  Com a dashboard do WayFreela, você gerencia seu negócio de
                   forma eficiente e organizada. Tudo ao seu alcance, em um só
                   lugar.
                 </p>
@@ -117,7 +117,7 @@ function SectionFuncionalidades(props: SectionProps) {
                   </li>
                 </ul>
                 <p>
-                  Com a dashboard do ProFreela, você gerencia seu negócio de
+                  Com a dashboard do WayFreela, você gerencia seu negócio de
                   forma eficiente e organizada. Tudo ao seu alcance, em um só
                   lugar.
                 </p>
