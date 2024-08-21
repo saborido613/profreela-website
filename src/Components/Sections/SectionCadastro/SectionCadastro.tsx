@@ -49,7 +49,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
   // Função para lidar com o envio do formulário
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const endpoint = import.meta.env.VITE_BASE_URL + "/users";
+    const endpoint = import.meta.env.VITE_BASE_URL + "/users/subscribe";
 
     setMessage(null);
     try {
@@ -60,6 +60,7 @@ export default function SectionCadastro(props: SectionCadastroProps) {
       setLoading(false);
     } catch (error) {
       setMostraMensagem("e");
+      setLoading(false);
     }
   };
 
