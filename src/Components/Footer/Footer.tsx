@@ -27,16 +27,16 @@ export default function Footer({ id }: FooterProps) {
             <Menus />
           </div>
 
-          <div className="flex flex-col items-center md:items-start gap-4">
+          <div className="flex flex-col text-md items-center md:items-start gap-4">
             <Link
               to={Path.POLITICA_PRIVACIDADE}
-              className="text-white text-sm font-medium"
+              className="text-white font-medium"
             >
               Políticas de Privacidade
             </Link>
             <Link
               to={Path.TERMOS_E_CONDICOES}
-              className="text-white text-sm font-medium"
+              className="text-white font-medium"
             >
               Termos de Uso e Condições
             </Link>

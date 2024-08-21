@@ -1,8 +1,8 @@
 import SectionComponent from "../../shared/component/Section/SectionComponent";
 import EstruturaSectionFuncionalidades from "./EstruturaSectionFuncionalidades";
-import FotoFuncionalidadesDashboard from "/images/image 2.png";
-import FotoFuncionalidadesCronograma from "/images/image 3.png";
-import FotoFuncionalidadesFinanceiro from "/images/image 2 (1).png";
+import FotoFuncionalidadesDashboard from "/images/tela-dashboard.png";
+import FotoFuncionalidadesCronograma from "/images/tela-cronograma.png";
+import FotoFuncionalidadesFinanceiro from "/images/tela-financeiro.png";
 
 export interface SectionProps {
   id: string;

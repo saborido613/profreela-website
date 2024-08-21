@@ -14,27 +14,34 @@ export default function EstruturaSectionFuncionalidades({
   invert
 }: EstruturaSectionFuncionalidadesProps) {
   return (
-    <div
-      className="flex
-      flex-col
-      gap-10
-      lg:flex-row 
-      even:justify-end
-      pt-5"
-    >
-      <div className={`lg:w-[25rem] ${invert && "lg:order-2"}`}>
-        <img src={image} alt="" className="w-full" />
-      </div>
+    <div>
+      <h1
+        className={`text-xl md:text-3xl font-bold pb-4 
+        text-center  
+        `}
+      >
+        {title}
+      </h1>
+      <div
+        className="flex
+        flex-col
+        gap-10
+        lg:flex-row
+        justify-around
+        items-center
+        pt-5
+        lg:text-[1rem]
+        2xl:text-[1.2rem]"
+      >
+        <div className={`lg:w-[45%] ${invert && "lg:order-2"}`}>
+          <img
+            src={image}
+            alt={`Um print do sistema da tela de ${title}`}
+            className="w-full"
+          />
+        </div>
 
-      <div className={`text-justify lg:max-w-[45%]`}>
-        <h1
-          className={`text-xl md:text-3xl font-bold pb-4  ${
-            invert && "lg:text-right"
-          }`}
-        >
-          {title}
-        </h1>
-        {texto}
+        <div className={`text-justify lg:max-w-[45%]`}>{texto}</div>
       </div>
     </div>
   );

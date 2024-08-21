@@ -29,7 +29,7 @@ function SectionSobre(props: SectionProps) {
             alt="Uma mulher na esquuerda apontando para um quadro kanbam e um homem na direita falando sobre a tarefa que ela está apontando. Na imagem possui um vaso no lado esquerdo da mulher e um armário na frente do homem. Ambos abaixo do quadro kanbam"
             className="md:h-[60vh] lg:h-[70vh]"
           />
-          <div>
+          <div className="text-[1rem] 2xl:text-[1.2rem]">
             <p className="my-4 text-justify">
               Nós entendemos que um dos grandes desafios dos freelancers é a
               organização das demandas para cumprir os prazos prometidos aos
